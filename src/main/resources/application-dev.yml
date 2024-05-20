@@ -1,0 +1,25 @@
+server:
+  port: 2333
+
+pan:
+  file:
+    path: pan_server/files/
+
+spring:
+  datasource:
+    username: root
+    password: 1423
+    url: jdbc:mysql://localhost:3306/my_pan?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    site:
+      patrickshao: debug
+    root: info
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      escape-symbol: '`'
